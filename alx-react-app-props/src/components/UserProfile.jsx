@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import UserInfo from './UserInfo'
 
-function ProfilePage() {
+function UserProfile() {
     const userData = useContext(useContext)
     return <UserInfo  />;
 }
