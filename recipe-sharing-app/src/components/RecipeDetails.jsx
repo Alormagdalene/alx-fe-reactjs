@@ -1,6 +1,5 @@
-import useRecipeStore from "./recipeStore";
-
-export const RecipeDetails = ({ recipeId }) => {
+import useRecipeStore from "./RecipeStore";
+const RecipeDetails = ({ recipeId }) => {
   const recipe = useRecipeStore(state =>
     state.recipes.find(recipe => recipe.id === recipeId)
   );
@@ -13,3 +12,5 @@ export const RecipeDetails = ({ recipeId }) => {
     </div>
   );
 };
+
+export default RecipeDetails;
