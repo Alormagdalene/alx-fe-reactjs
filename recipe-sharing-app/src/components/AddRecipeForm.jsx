@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { useRecipeStore } from '../store/RecipeStore';
+import  useRecipeStore  from '../stores/RecipeStore';
 
 const AddRecipeForm = () => {
     const addRecipe = useRecipeStore(state => state.addRecipe);
     const [title, setTitle] = useState('');
+    const [description, setDescription] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
