@@ -1,4 +1,4 @@
-import useRecipeStore from "./RecipeStore";
+import useRecipeStore from "./recipeStore";
 const RecipeDetails = ({ recipeId }) => {
   const recipe = useRecipeStore(state =>
     state.recipes.find(recipe => recipe.id === recipeId)
