@@ -1,12 +1,12 @@
 
+import RegistrationForm from "./components/RegistrationForm";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-     
-    </>
-  )
-}
+    <div>
+      <RegistrationForm />
+    </div>
+  );
+};
 
-export default App
+export default App;
